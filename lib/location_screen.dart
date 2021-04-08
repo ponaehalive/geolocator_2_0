@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:geolacator_2_0/utilities/constants.dart';
+import 'weather.dart';
 
 class LocationScreen extends StatefulWidget {
   LocationScreen({this.locationWeather});
