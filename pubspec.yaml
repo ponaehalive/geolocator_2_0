@@ -32,4 +32,9 @@ flutter:
   assets:
     - images/
 
+  fonts:
+  - family: AmaticSC
+    fonts:
+    - asset: fonts/AmaticSC-Bold.ttf
+      weight: 900
 

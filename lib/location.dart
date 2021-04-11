@@ -8,7 +8,10 @@ class Location {
     try {
       Position position = await Geolocator.getCurrentPosition(
           desiredAccuracy: LocationAccuracy.low,
-          forceAndroidLocationManager: true);
+          forceAndroidLocationManager: true
+          // need for android simulator
+
+          );
       latitude = position.latitude;
       longitude = position.longitude;
     } catch (e) {
