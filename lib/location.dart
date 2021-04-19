@@ -7,11 +7,10 @@ class Location {
   Future<void> getCurrentLocation() async {
     try {
       Position position = await Geolocator.getCurrentPosition(
-          desiredAccuracy: LocationAccuracy.low,
-          forceAndroidLocationManager: true
-          // need for android simulator
-
-          );
+        desiredAccuracy: LocationAccuracy.low,
+        //    forceAndroidLocationManager: true
+        // need for android simulator
+      );
       latitude = position.latitude;
       longitude = position.longitude;
     } catch (e) {

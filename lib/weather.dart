@@ -37,6 +37,8 @@ class WeatherModel {
       return '☀️';
     } else if (condition == 801) {
       return '🌤️️';
+    } else if (condition == 802) {
+      return '🌤️️';
     } else if (condition == 803) {
       return '🌥️';
     } else if (condition <= 804) {
@@ -47,10 +49,12 @@ class WeatherModel {
   }
 
   String getMessage(int temp) {
-    if (temp > 25) {
+    if (temp > 30) {
       return 'Час охолонути 🍦';
-    } else if (temp > 20) {
+    } else if (temp > 25) {
       return 'Час вдягнути шорти та 👕';
+    } else if (temp > 15) {
+      return 'Не забудьте про 🕶';
     } else if (temp < 5) {
       return 'Вдягнiть 🧣 та 🧤';
     } else {
